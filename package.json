@@ -4,29 +4,34 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf ./dist && webpack",
+    "build:dev": "rimraf ./dist && webpack --config webpack.config.debug.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RonPenton/ngu-quest-calc.git"
+    "url": "git+https://github.com/RonPenton/react-typescript-template.git"
   },
   "author": "Ron Penton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RonPenton/ngu-quest-calc/issues"
+    "url": "https://github.com/RonPenton/"
   },
-  "homepage": "https://github.com/RonPenton/ngu-quest-calc#readme",
+  "homepage": "https://github.com/RonPenton/",
   "devDependencies": {
-    "@types/react": "^16.8.8",
-    "@types/react-dom": "^16.8.2",
-    "css-loader": "^2.1.1",
-    "style-loader": "^0.23.1",
-    "ts-loader": "^5.3.3",
-    "typescript": "^3.3.3333",
-    "webpack": "^4.29.6"
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "css-loader": "^3.6.0",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.43.0"
   },
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack-cli": "^3.3.12"
   }
 }
